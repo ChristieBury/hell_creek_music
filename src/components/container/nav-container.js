@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {withRouter } from "react-router";
 import { NavLink } from "react-router-dom";
  
 export default class ReactContainer extends Component {
@@ -21,12 +23,17 @@ export default class ReactContainer extends Component {
                         Merchandise
                     </NavLink>
 
+                    <NavLink to="../container/comic-container/and-more" activeClassName="nav-link-active">
+                        and More...
+                    </NavLink>
+
                     <NavLink to="/contact" activeClassName="nav-link-active">
                         Contact
                     </NavLink>
+                    
                 </div>
                 <h1></h1>
             </div>
-        );
+        );<FontAwesomeIcon/>
     }
 }

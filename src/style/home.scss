@@ -1,0 +1,18 @@
+.home-wrapper {
+    display: grid;
+    gap: 1fr 3fr 1fr;
+    .left-column {
+        display:flex;
+
+    }
+    .center {
+        display: flex;
+        width: 900px;
+        height: 600px;
+    }
+
+    .right-column {
+        display:flex;
+
+    }
+}
