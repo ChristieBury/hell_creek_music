@@ -69,8 +69,8 @@ module.exports = webpackMerge(webpackCommon, {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: path.resolve(__dirname, "../static/index.html"),
-      favicon: path.resolve(__dirname, "../static/favicon.ico"),
+      template: path.resolve(__dirname,"../static/index.html"),
+      favicon: path.resolve(__dirname,"../static/favicon-guitar-black.png"),
       minify: {
         removeComments: true,
         collapseWhitespace: true,
