@@ -14,6 +14,7 @@ import Merch from "./pages/merch";
 import Contact from "./pages/contact";
 import AndMore from "./container/comic-container/and-more";
 import Icons from "../helpers/icons-fonts";
+import Favicon from'react-favicon';
 
 export default class App extends Component {
   constructor() {
