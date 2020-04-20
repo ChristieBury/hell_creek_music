@@ -24,7 +24,7 @@ export default class ReactContainer extends Component {
                     </NavLink>
 
                     <NavLink to="../container/comic-container/and-more" activeClassName="nav-link-active">
-                        and More...
+                        and  More...
                     </NavLink>
 
                     <NavLink to="/contact" activeClassName="nav-link-active">
@@ -32,7 +32,7 @@ export default class ReactContainer extends Component {
                     </NavLink>
                     
                 </div>
-                <h1></h1>
+                
             </div>
         );<FontAwesomeIcon/>
     }

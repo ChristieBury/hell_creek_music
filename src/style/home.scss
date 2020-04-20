@@ -1,18 +1,102 @@
-.home-wrapper {
-    display: grid;
-    gap: 1fr 3fr 1fr;
-    .left-column {
-        display:flex;
+.top-location-wrapper {
+    display:flex;
+    justify-content: center;
+}
+.location-wrapper {
+    width:800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    font-size: 1.25em;
+}
 
-    }
-    .center {
-        display: flex;
-        width: 900px;
-        height: 600px;
-    }
+.left-column {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.phone-wrapper {
+    display: flex;
+}
+.fa-phone-alt {
+    margin-right: 8px;
+    font-size: 1.25em;
+}
+.right-column {
+    display: flex;
+}
+ .address-wrapper {
+     display:flex;
+}
+ .fa-map-marker-alt {
+     margin-right: 7px;
+     font-size: 1.25em;
 
-    .right-column {
-        display:flex;
+     &:hover {
+        color:#ff9100;
+        cursor: pointer;
+     }
+ }
 
-    }
+ .location-line {
+     padding-left: 7px;
+ }
+
+ .map-wrapper {
+    padding-top: 10px;
+  }
+  .map-wrapper iframe {
+      width: 100%;
+      height: 300px;
+  }
+
+.home-footer {
+    background-color: black;
+    color: white;
+    
+
+}
+.footer-image  {
+    width: 200px;
+}  
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone {
+    display:flex;
+    justify-content: center;
+    padding: 3px 0px 5px;
+}
+// .hours {
+//     display:flex;
+//     justify-content: center;
+// }
+.m-f-hours {
+    display:flex;
+    justify-content: center;
+}
+.saturday-hours {
+    display:flex;
+    justify-content: center;
+}
+
+.sunday-hours {
+    display:flex;
+    justify-content: center;
+}
+
+.copyright-wrapper {
+    display:flex;
+    justify-content: center;
+    font-size: 0.7em;
+    padding-top: 25px;
+}
+
+.facebook-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
 }

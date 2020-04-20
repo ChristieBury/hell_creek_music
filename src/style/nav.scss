@@ -1,0 +1,42 @@
+.app
+.nav-container {
+    height:50px;
+    // width: 800px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;    
+}
+.nav-container {
+    display:flex;
+    justify-content: center;
+}
+
+.link-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    
+}
+    
+a {
+   
+    color: white;
+    text-decoration: none;
+
+}        
+a:hover {
+    color:#ff9100;
+    cursor: pointer;
+}
+
+.logo-footer {
+    padding-top: 30px;
+}
+
+
+
+
+
+
+

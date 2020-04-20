@@ -3,11 +3,12 @@ import{
     faGuitar, 
     faDrum,
     faClock, 
-    faSpinner, 
-    faFacebook, 
+    faSpinner,
+    faMapMarkerAlt, 
+    // faFacebook, 
     faPhoneAlt, 
-    faEnvelope, 
-    faInstagram
+    faEnvelope 
+    // faInstagram
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -18,11 +19,13 @@ return library.add(
     faGuitar, 
     faDrum,
     faClock, 
-    faSpinner, 
-    faFacebook, 
+    faSpinner,
+    faMapMarkerAlt, 
+    // faFacebook, 
     faPhoneAlt, 
     faEnvelope, 
-    faInstagram );
+    // faInstagram 
+    );
 };
 
 export default Icons;

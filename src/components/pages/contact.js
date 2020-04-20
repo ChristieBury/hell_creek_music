@@ -13,6 +13,8 @@ export default class Contact extends Component {
             <Link to="/contact"></Link>
            
                 <h1>Contact</h1>
+                {/* from npm website */}
+                {/* ReactDOM.render(<SocialIcon url="http://twitter.com/jaketrent" />, document.body); */}
             </div>
         ); <FontAwesomeIcon/>
     }
