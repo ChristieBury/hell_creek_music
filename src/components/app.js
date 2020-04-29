@@ -8,7 +8,8 @@ import axios from "axios";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Webfont from 'webfontloader';
-
+// import Swiper from 'swiper';
+import Swiper from 'react-id-swiper';
 import { SocialIcon } from 'react-social-icons';
 import ReactContainer from "./container/nav-container";
 import Home from "./pages/home";
@@ -18,9 +19,8 @@ import Contact from "./pages/contact";
 import AndMore from "./container/comic-container/and-more";
 import Icons from "../helpers/icons-fonts";
 import Favicon from'react-favicon';
-import HellCreekLogo from "../../static/assets/images/hell-creek-logo.jpg"
-
-
+import HellCreekLogo from "../../static/assets/images/hell-creek-logo.jpg";
+import getSlider from "./pages/artists"
 
 
 export default class App extends Component {

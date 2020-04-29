@@ -1,0 +1,105 @@
+.contact-cover-wrapper{
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh-200px); 
+    padding-top: 50px; 
+    
+}
+.left-contact-wrapper {
+    display: grid;
+    grid-column: 1;
+    justify-items: end;
+    
+}
+
+img.trex  {
+    border-style: ridge;
+    border-color:#ff9100;
+    border-width: 8px;
+    border-radius: 50px;
+    // position: absolute;
+}
+
+.right-contact-column-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-right: 200px;
+}
+.phone-wrapper {
+    display: flex;
+}
+.phone-wrapper-icon {
+    padding-right: 8px;
+}
+
+.text {
+    font-size: 1.5em;
+}
+
+
+.email-wrapper {
+    display:flex;
+    justify-content: center;
+
+}
+.email-icon-wrapper {
+    padding-right: 15px;
+}
+
+button {
+    font-size: 1.5em;
+    border-radius: 8px;
+    
+    &:hover {
+      background-color: black;
+      border: none;
+     
+    }
+}
+
+.email-icon-wrapper{
+    display: flex;
+    padding-top: 5px;
+    font-size: 1.25em;
+}
+a.email-name {
+    font-family: 'Roboto Slab', serif;
+    color:black;
+   &:hover {
+       color:#ff9100; 
+      
+   } 
+}
+.click-to-email-text {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.contact-map-wrapper {
+    display: flex;
+    
+
+
+}
+.contact-map-wrapper {
+    display: flex;
+}
+.contact-address-wrapper {
+    font-size: 1.5em;
+}
+.contact-map-icon-wrapper {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.contact-facebook-wrapper {
+    display: flex;
+}
+
+.hell-creek-facebook {
+    font-size: 1.5em;
+    padding-left:15px;
+}

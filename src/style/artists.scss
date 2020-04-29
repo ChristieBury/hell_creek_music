@@ -1,0 +1,40 @@
+h1.artist-name {
+  display: flex;
+  justify-content: center;
+}
+
+img.carousel {
+  width:60vw;
+  transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+
+}
+
+
+.carousel-container {
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+padding-bottom: 50px;
+}
+
+.carousel-img-wrapper {
+  grid-column: 2;
+}
+
+.forward-button-wrapper {
+  grid-column:3;
+  align-self: center;
+  padding-left: 12px;
+}
+
+.back-button-wrapper {
+  grid-area: 1;
+  justify-self: end;
+  align-self: center;
+}
+button {  
+  cursor: pointer;
+  outline:0;
+  &:hover {
+    background-color: #ff9100;
+  }
+}
