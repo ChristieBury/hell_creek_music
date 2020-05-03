@@ -4,12 +4,12 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Webfont from 'webfontloader';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Webfont from 'webfontloader';
 // import Swiper from 'swiper';
-import Swiper from 'react-id-swiper';
+// import Swiper from 'react-id-swiper';
 import { SocialIcon } from 'react-social-icons';
 import ReactContainer from "./container/nav-container";
 import Home from "./pages/home";
@@ -18,11 +18,13 @@ import Merch from "./pages/merch";
 import Contact from "./pages/contact";
 import AndMore from "./container/comic-container/and-more";
 import Icons from "../helpers/icons-fonts";
-import Favicon from'react-favicon';
+// import Favicon from'react-favicon';
 import HellCreekLogo from "../../static/assets/images/hell-creek-logo.jpg";
-import getSlider from "./pages/artists"
-
-
+// import getSlider from "./pages/artists"
+import ViewBook from "./container/comic-container/viewComic";
+import AddComic from './container/comic-container/addComic';
+import DeletedLanding from './container/comic-container/deleteLanding';
+import AddedLanding from "./container/comic-container/addedLanding";
 export default class App extends Component {
   constructor() {
     super();
@@ -45,7 +47,11 @@ export default class App extends Component {
               <Route path="/merch" component={Merch}/>
               <Route path="/container/comic-container/and-more" component={AndMore}/>
               <Route path="/contact" component={Contact}/>
-
+              <Route exact path="/view_book/:id" component={ViewBook}/>
+              <Route path="/add_book" component={AddComic}/>
+              
+              <Route path="/deleted_book" component={DeletedLanding}/>
+              <Route path="/addedLanding" component={AddedLanding}/>
             </Switch>
           </div>
         </Router>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Trex from '../../../static/assets/images/t-rex2-img.jpg';
-import Home from "./home";
+// import Home from "./home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialIcon } from 'react-social-icons';
 

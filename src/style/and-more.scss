@@ -1,0 +1,62 @@
+.comic-header {
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: #ff9100;
+}
+// viewComic.js
+.comic-name-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.book-title {
+    font-size:1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.book-author {
+    font-size:1.3em;
+    padding-bottom: 40px;
+}
+
+//updateComic.js
+.update-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.update-button-wrapper button {
+    font-size: 1em;
+}
+button.save-update-button  {
+    font-size: 1em;
+}
+form.save-submit-button {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+//deleteAction.js
+.delete-action-wrapper {
+    display:flex;
+    justify-content: flex-end;
+}
+.delete-action-wrapper button {
+    font-size: 1em;
+}
+
+//comicIndex.js
+.steves-comic-pick {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    color: rgb(255, 238, 0);
+    
+}
+
+

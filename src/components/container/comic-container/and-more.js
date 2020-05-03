@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- 
+
+import ComicIndex from './comicIndex';
+import AddComic from './addComic';
+import DeletedLanding from './deleteLanding';
+
 export default class AndMore extends Component {
     constructor() {
         super()
@@ -10,10 +14,21 @@ export default class AndMore extends Component {
     render() {
         return (
             <div className="comic-wrapper">
-            <Link to="/comic-container/and-more"></Link>
-           
-                <h1>and More...</h1>
+
+                <div className='comic-header'>
+                    <h1>We Carry Comics!</h1>
+                </div>
+                <div className='comic-image-wrapper'>
+
+                    
+                <ComicIndex/>
+                </div>
+                <Link to="/container/comic-container/and-morend-more"></Link>
+                <AddComic/> 
+                {/* <DeletedLanding/> */}
             </div>
         ); <FontAwesomeIcon/>
     }
+
+    
 }
