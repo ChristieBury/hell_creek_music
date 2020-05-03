@@ -1,0 +1,62 @@
+.merch-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.item-name {
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+}
+.vendor-image-url-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    justify-content:space-around;
+    
+}
+
+.drum-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.guitar-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.amp-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.accessories-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.rental-instruments {
+    display: flex;
+}
+.rent-me {
+    font-size:1.5rem;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.creek {
+    color:yellow;
+    font-size:2.5rem;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    &:hover{
+        text-transform: uppercase;
+    }
+}

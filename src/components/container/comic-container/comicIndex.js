@@ -32,7 +32,7 @@ export default class ComicIndex extends Component {
       console.log('state', this.state)
         return (
             <div className='content'>
-                <h1 className='steves-comic-pick'>Steve's comic pick at Hell Creek Music & More</h1>
+                <h1 className='steves-comic-pick'>Steve's top 5 comic pick at Hell Creek Music & More</h1>
                 {this.state.books.map((book) => ( 
                 <div className="book-title-author" key={book[0]}>
                     <h2>Comic Book Title: {book[1]}</h2>
