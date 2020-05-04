@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import addedLanding from './addedLanding';
-import ComicIndex from './comicIndex';
-
 
 export default class AddComic extends Component {
     constructor(props) {
@@ -11,16 +7,13 @@ export default class AddComic extends Component {
         this.state={
             title: "",
             author: "",
-        
         }
 
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
-       
         
     }
     
-  
     handleChange(event) {
         this.setState({
             [event.target.name]: event.target.value
@@ -43,14 +36,14 @@ export default class AddComic extends Component {
         })
         .then(responseData => {return responseData}
         )
-        .then(() =>{this.props.history.push('/')})
+        .then(() =>{this.props.history.push('/addedLanding')})
         .catch(err => {
             console.log("Fetch error", err)
         })
 
     }
 
-
+       
     render() {
         return (
             <div style={{padding:"10px"}}>
@@ -80,13 +73,11 @@ export default class AddComic extends Component {
                     
                     <div className="submit" style={{textAlign:"center", paddingBottom:'100px'}}>
                       
-                       <button
-                        
+                       <button className="added-comic-button"
                         type="submit" 
                         value="submit"
-                        
                         >Submit</button>
-                        
+                       
                     </div>
                         
                 </form>

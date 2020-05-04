@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Link from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
  
@@ -61,7 +61,9 @@ export default class UpdateBook extends Component {
         return (
             <div>
                 <div className='update-button-wrapper'>
-                    <button onClick={this.editBook}>Update Comic Form</button> 
+                    <button 
+                    onClick={this.editBook}>Update Comic Form</button>
+                    
                 </div>
                     <form onSubmit={this.handleSubmit} style={{visibility: this.state.formHidden ? "hidden" : "visible"}}className='save-submit-button' onSubmit={this.handleSubmit}> 
                     
@@ -84,11 +86,14 @@ export default class UpdateBook extends Component {
                                 onChange={this.handleChange} style={{ width: "300px", height: "20px"}}>
                             </input>
                         </div>
-
-                        <button className='save-update-button' type="submit" value="submit" action="">Save Comic Update</button> 
+                        <button className='save-update-button' 
+                        type="submit" 
+                        value="submit"
+                        action="">Save Comic Update</button> 
                        
                         
                     </form>
+                        <Link to={'/container/comic-container/and-more'}> View All Books</Link>
             </div>
         );
     }

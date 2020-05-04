@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import UpdateBook from "./updateComic";
 import DeleteAction from './deleteAction';
+import AddComic from './addComic';
 
  
 export default class ViewBook extends Component {
@@ -38,7 +39,7 @@ export default class ViewBook extends Component {
         return (
             <div className='info-wrapper'>
                 <div className="comic-name-wrapper">
-                <h2 style={{color:"#ff9100"}}>Comic</h2>
+                <h2 style={{color:"#ff9100"}}>Comic Update</h2>
                 </div>
                 {/* <hr/> */}
                 <div className='book-title'>
@@ -50,6 +51,7 @@ export default class ViewBook extends Component {
                 </div>
                 <UpdateBook ourProp = {this.state.singleBook}/>
                 <DeleteAction id={this.state.singleBook[0]}/>
+                
                 
                 
             </div>

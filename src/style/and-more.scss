@@ -4,6 +4,11 @@
     padding-top: 50px;
     color: #ff9100;
 }
+img.comic-pano-img {
+    display:flex;
+    height: 300px;
+
+}
 // viewComic.js
 .comic-name-wrapper {
     display: flex;
@@ -58,5 +63,6 @@ form.save-submit-button {
     color: rgb(255, 238, 0);
     
 }
+
 
 
