@@ -34,7 +34,9 @@ export default class Artists extends Component {
 
         this.state = {
             index: 0,
-            imgList:[Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14]
+            imgList:[Image1, Image2, Image3, Image4, 
+            Image5, Image6, Image7, Image8, Image9, 
+            Image10, Image11, Image12, Image13, Image14]
         }
     }
 
@@ -76,14 +78,14 @@ export default class Artists extends Component {
                         <img className='carousel' src={this.state.imgList[this.state.index]} alt='artists photos'/><br />
                     </div>
 
-                        <div className='back-button-wrapper'>
-                            <button className='back-button'onClick={this.onClickBack}>Back</button>
-                        </div>
+                    <div className='back-button-wrapper'>
+                        <button className='back-button'onClick={this.onClickBack}>Back</button>
+                    </div>
 
-                        <div className='forward-button-wrapper'>
-                            <button className='forward-button' onClick={this.onClickForward}
-                            >Forward</button>
-                        </div>
+                    <div className='forward-button-wrapper'>
+                        <button className='forward-button' onClick={this.onClickForward}
+                        >Forward</button>
+                    </div>
                    
                 
                 </div>

@@ -12,8 +12,9 @@ img.carousel {
 
 .carousel-container {
   display:grid;
-  grid-template-columns: 1fr 5fr 1fr;
-padding-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(615px 1fr));
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .carousel-img-wrapper {
