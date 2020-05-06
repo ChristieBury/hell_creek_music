@@ -18,14 +18,11 @@
         height: 100%;  
     }
     
-.store-image-wrapper {
-    display: flex;
-    justify-content: center;
-}
+
 
 @mixin for-media-query {
     display: flex;
-    text-align: center;
+    justify-content: center;
     background-image: url(../../static/assets/images/2400px-store-image.jpg);
     width: 100vw;
     height:100vh;
@@ -35,17 +32,7 @@
     background-size: cover;
     overflow:visible;
 }
-.image-wrapper{
-  @include for-media-query  
+.store-image-wrapper{
+    @include for-media-query  
 }
 
-@media only screen and (min-device-width: 320px) 
-and (max-device-width: 480px) and 
-(orientation: portrait) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {.image-wrapper{@include for-media-query}}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {.image-wrapper{@include for-media-query}}

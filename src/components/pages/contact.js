@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Trex from '../../../static/assets/images/t-rex2-img.jpg';
-// import Home from "./home";
+import Home from "./home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialIcon } from 'react-social-icons';
 
@@ -78,7 +78,7 @@ export default class Contact extends Component {
                             <div className="hell-creek-facebook">Hell Creek Music & More
                             </div>
                         </div>
-                        <Link to="/contact"></Link>
+                        {/* <Link to="/contact"></Link> */}
                 </div>
            
                

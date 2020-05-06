@@ -1,64 +1,109 @@
-@media (min-device-width: 415px) and (max-device-width: 800px) {
- 
-     
-    .app {
-        flex-direction:column;
-        height:100%;
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {.image-wrapper {@include for-media-query}}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {.image-wrapper{@include for-media-query}}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {.image-wrapper{@include for-media-query}}  
+@media screen and (min-device-width: 380px) and (max-device-width: 800px) {
     
+    body {
+        overflow-x:hidden;
     }
-//home
+    .app {
+        width:100vw;
+        height:100%;
+    }
+
+// // //home
     .hellCreekLogo img {
-        width: 400px;
+        width: 100%;
+        text-align: center;
+        margin:auto;
         order: 1;
+        position: relative;
     }
     .link-container{
         flex-direction: column;
         text-align: center;
-        padding-top: 115px;
+        padding-top: 125px;
+        position: absolute;
         order:2;
     }
     a {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        font-size:35px;
     }
+    .store-image-wrapper{
+        text-align:center;
+        width:100vw;
+        padding-left:400px;
+    }
+ 
     .location-wrapper {
         flex-direction: column;
         align-items: center;
-        padding-top:150px;
-        width:400px;
-        order: 3;
+        text-align:center;
+        padding-top:180px;
+        width:100vw;
+    }
+    .home-footer{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        font-size:25px;
+    }
+    .copyright-wrapper {
+        padding-left:200px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        width:100vw;
+        
     }
 //artist
     .artist-name {
-        padding-top: 130px;
+        padding-top: 150px;
+        font-size:40px;
+        padding-bottom:50px;
     }
     
     img.carousel{
         width:100vw;
-        padding-left:120px;
+        padding-right:40px;
+       
         
-    }
-    .carousel-container {
-        flex-direction: column-reverse;
-    }
-
-    .carousel-img-wrapper {
-        padding-left: 35px;
-        padding-top: 15px;
-        padding-bottom: 25px;
     }
     .carousel-container {
         display:flex;
         flex-wrap:wrap;
+        flex-direction: column-reverse;
+        
     }
-//merch
+
+    .carousel-img-wrapper {
+        padding-left: 15px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    // //merch
     .merch-title-wrapper {
         font-size: calc(0.35em + 1vmin);
-        padding-top:130px;
+        padding-top:150px;
+        padding-bottom:0;
+        text-align:center;
     }
     .vendor-image-url-links{
         grid-template-columns: repeat(1, auto);
     }
+    .rent-me {
+        font-size: calc(1.35em - 1vmin);
+        
+    }
+
     .item-name {
         padding-top: 50px;
         color: yellow;
@@ -66,10 +111,11 @@
     a.vir-wrapper {
         display:inline-flex;
         flex-direction:row;
-        width:380px;
+        padding-right:70px;
+        
     }
     img.vir-instrument-logo1{
-        width:100%;
+        width:30%;
         height:70%;
         flex-basis:0px;
         flex-shrink:1;
@@ -80,22 +126,34 @@
         flex-basis:0px;
         flex-shrink:1;
     }
-//and-more
+ 
+// //and-more
     .comic-header h1 {
-        padding-top: 60px;
+        padding-top: 100px;
     }
     img.comic-pano-img {
-        width:100%;
+        width:135vw;
         height: 100%;
         text-align:center;
     }
+    .content {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
     h1.steves-comic-pick {
-        font-size: calc(0.85em + 1vmin);
+        display:flex;
+        flex-wrap:wrap;
+        padding-top:30px;
+        padding-left:63px;
+        text-align:center;
+        width: 100vw;
     }
     .book-title-author {
-        display:grid;
-        font-size: calc(2vmin);
-        text-align: center;
+      width:100vw;
+      padding-left:63px;
+      
     }
     .links {
         display:none !important;
@@ -107,29 +165,40 @@
     .add-a-book {
         display: none !important;
     }
-//contact
+// //contact
      img.trex {
-         transform: scale(0.6, 0.7);
+         transform: scale(0.5, 0.4);
      }
      .contact-cover-wrapper{
-     padding-top:-30px;
          grid-template-columns: repeat(1, auto);
+         padding-right: 290px;
+         align-items:start;
+         
      } 
-   
-    .right-contact-column-wrapper {
-        display:grid;
-        font-size: calc(3.2vmin);
-        padding-left:200px;
-    }
-    .phone-wrapper, .contact-map-wrapper, .email-wrapper {
-        padding-bottom:15px;
-    }
-   
-    
+     .left-contact-wrapper {
+        display:flex;
+        justify-items: center;
+        padding-top:0px;
+        margin-top: -150px;
+        margin-bottom: -230px;
+        margin-left: -30px;
         
+     }
+    .right-contact-column-wrapper {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        align-items:center;
+        margin-right:-170px;
+     
+    }
+    a.email-name {
+        font-size: 15px;
+    }
     
+.phone-wrapper, .contact-map-wrapper, .email-wrapper {
+    padding-bottom: 15px;
+}
+
 }           
-            
-
-
-
+       

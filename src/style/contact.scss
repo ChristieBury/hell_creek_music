@@ -53,8 +53,11 @@ button {
     border-radius: 8px;
     
     &:hover {
-      background-color: black;
+      background-color: black 
+    //   !important
+      ;
       border: none;
+      
      
     }
 }
@@ -65,10 +68,13 @@ button {
     font-size: 1.25em;
 }
 a.email-name {
+
     font-family: 'Roboto Slab', serif;
     color:black;
    &:hover {
-       color:#ff9100; 
+       color:#ff9100;
+       background-color: black;
+       
       
    } 
 }
@@ -79,8 +85,6 @@ a.email-name {
 
 .contact-map-wrapper {
     display: flex;
-    
-
 
 }
 .contact-map-wrapper {

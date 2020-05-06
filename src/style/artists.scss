@@ -33,13 +33,14 @@ img.carousel {
       justify-self: end;
       align-self: center;
     }
-}
+  }
 
-
-button {  
-  cursor: pointer;
-  outline:0;
-  &:hover {
-    background-color: #ff9100;
+  button {  
+    cursor: pointer;
+    outline:0;
+    &:hover {
+      background-color: #ff9100 !important; 
   }
 }
+
+
