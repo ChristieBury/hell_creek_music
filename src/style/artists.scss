@@ -6,32 +6,36 @@ h1.artist-name {
 img.carousel {
   width:60vw;
   transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
-
 }
-
 
 .carousel-container {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(615px 1fr));
   position: relative;
   padding-bottom: 50px;
+  margin:0 auto;
+  &--fluid{
+    margin:0 ;
+    max-width:100%;
+  }
+    .carousel-img-wrapper {
+      grid-column: 2;
+    }
+
+    .forward-button-wrapper {
+      grid-column:3;
+      align-self: center;
+      padding-left: 12px;
+    }
+    
+    .back-button-wrapper {
+      grid-area: 1;
+      justify-self: end;
+      align-self: center;
+    }
 }
 
-.carousel-img-wrapper {
-  grid-column: 2;
-}
 
-.forward-button-wrapper {
-  grid-column:3;
-  align-self: center;
-  padding-left: 12px;
-}
-
-.back-button-wrapper {
-  grid-area: 1;
-  justify-self: end;
-  align-self: center;
-}
 button {  
   cursor: pointer;
   outline:0;

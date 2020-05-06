@@ -1,11 +1,14 @@
-@media (max-width:615px) {
+@media (min-device-width: 415px) and (max-device-width: 800px) {
+ 
+     
     .app {
         flex-direction:column;
         height:100%;
     
     }
+//home
     .hellCreekLogo img {
-        width: 415px;
+        width: 400px;
         order: 1;
     }
     .link-container{
@@ -22,17 +25,111 @@
         flex-direction: column;
         align-items: center;
         padding-top:150px;
+        width:400px;
         order: 3;
     }
+//artist
     .artist-name {
         padding-top: 130px;
     }
     
     img.carousel{
         width:100vw;
-        padding-left:75px;
+        padding-left:120px;
         
     }
-}
+    .carousel-container {
+        flex-direction: column-reverse;
+    }
 
-  
+    .carousel-img-wrapper {
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .carousel-container {
+        display:flex;
+        flex-wrap:wrap;
+    }
+//merch
+    .merch-title-wrapper {
+        font-size: calc(0.35em + 1vmin);
+        padding-top:130px;
+    }
+    .vendor-image-url-links{
+        grid-template-columns: repeat(1, auto);
+    }
+    .item-name {
+        padding-top: 50px;
+        color: yellow;
+    }
+    a.vir-wrapper {
+        display:inline-flex;
+        flex-direction:row;
+        width:380px;
+    }
+    img.vir-instrument-logo1{
+        width:100%;
+        height:70%;
+        flex-basis:0px;
+        flex-shrink:1;
+    }
+    img.vir-instrument-logo2 {
+        width:100%;
+        height:70%;
+        flex-basis:0px;
+        flex-shrink:1;
+    }
+//and-more
+    .comic-header h1 {
+        padding-top: 60px;
+    }
+    img.comic-pano-img {
+        width:100%;
+        height: 100%;
+        text-align:center;
+    }
+    h1.steves-comic-pick {
+        font-size: calc(0.85em + 1vmin);
+    }
+    .book-title-author {
+        display:grid;
+        font-size: calc(2vmin);
+        text-align: center;
+    }
+    .links {
+        display:none !important;
+
+    }
+    form {
+        display:none !important;
+    }
+    .add-a-book {
+        display: none !important;
+    }
+//contact
+     img.trex {
+         transform: scale(0.6, 0.7);
+     }
+     .contact-cover-wrapper{
+     padding-top:-30px;
+         grid-template-columns: repeat(1, auto);
+     } 
+   
+    .right-contact-column-wrapper {
+        display:grid;
+        font-size: calc(3.2vmin);
+        padding-left:200px;
+    }
+    .phone-wrapper, .contact-map-wrapper, .email-wrapper {
+        padding-bottom:15px;
+    }
+   
+    
+        
+    
+}           
+            
+
+
+

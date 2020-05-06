@@ -73,14 +73,14 @@ export default class Artists extends Component {
                 <h1 className='artist-name'>Artists</h1>
 
                 <div className='carousel-container'>
+                    <div className='back-button-wrapper'>
+                        <button className='back-button'onClick={this.onClickBack}>Back</button>
+                    </div>
 
                     <div className='carousel-img-wrapper'>
                         <img className='carousel' src={this.state.imgList[this.state.index]} alt='artists photos'/><br />
                     </div>
 
-                    <div className='back-button-wrapper'>
-                        <button className='back-button'onClick={this.onClickBack}>Back</button>
-                    </div>
 
                     <div className='forward-button-wrapper'>
                         <button className='forward-button' onClick={this.onClickForward}

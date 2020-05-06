@@ -16,7 +16,7 @@ export default class Contact extends Component {
     render() {
         return (
             <div className="contact-cover-wrapper">
-                <Link to="/contact"></Link>
+                
                     <div className="left-contact-wrapper">
                         <img className="trex" src={Trex}></img>
                     </div>
@@ -35,7 +35,8 @@ export default class Contact extends Component {
                     <div className="contact-map-wrapper">
                         <div className="contact-map-icon-wrapper">
                         
-                            <Link to="/"><FontAwesomeIcon icon="map-marker-alt"/></Link>
+                            <Link to="/">
+                                <FontAwesomeIcon icon="map-marker-alt"/></Link>
                           
                             
                             </div>
@@ -77,12 +78,11 @@ export default class Contact extends Component {
                             <div className="hell-creek-facebook">Hell Creek Music & More
                             </div>
                         </div>
-
+                        <Link to="/contact"></Link>
                 </div>
            
                
-                {/* from npm website */}
-                {/* ReactDOM.render(<SocialIcon url="http://twitter.com/jaketrent" />, document.body); */}
+               
             </div>
         ); <FontAwesomeIcon/>
     }

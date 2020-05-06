@@ -47,7 +47,7 @@ export default class AddComic extends Component {
     render() {
         return (
             <div style={{padding:"10px"}}>
-                <h1 style={{textAlign:"center"}}>Add a Book Below</h1> 
+                <h1 className="add-a-book" style={{textAlign:"center"}}>Add a Book Below</h1> 
                 {console.log("state", this.state)}
                 
                 <form onSubmit = {this.handleSubmit}>
