@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import DeletedLanding from './deleteLanding';
-
 export default function DeleteAction(props) {
     function handleClick(){
         fetch(`http://127.0.0.1:5000/delete/${props.id}`,{

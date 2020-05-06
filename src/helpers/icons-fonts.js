@@ -5,10 +5,8 @@ import{
     faClock, 
     faSpinner,
     faMapMarkerAlt, 
-    // faFacebook, 
     faPhoneAlt, 
     faEnvelope 
-    // faInstagram
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -21,10 +19,8 @@ return library.add(
     faClock, 
     faSpinner,
     faMapMarkerAlt, 
-    // faFacebook, 
     faPhoneAlt, 
     faEnvelope, 
-    // faInstagram 
     );
 };
 

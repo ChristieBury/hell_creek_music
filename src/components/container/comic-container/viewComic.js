@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import UpdateBook from "./updateComic";
 import DeleteAction from './deleteAction';
-import AddComic from './addComic';
-
  
 export default class ViewBook extends Component {
     constructor(props) {

@@ -26,7 +26,6 @@ export default class UpdateBook extends Component {
         })
     }
     handleSubmit(event) {
-        // event.preventDefault();
         let id = this.state.id;
         let title = this.state.title;
         let author = this.state.author;

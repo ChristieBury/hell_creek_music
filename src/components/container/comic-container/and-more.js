@@ -28,7 +28,7 @@ export default class AndMore extends Component {
                 </div>
                 
             </div>
-        ); <FontAwesomeIcon/>
+        ); 
     }
 
     

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import { Link } from "react-router-dom"
-import axios from 'axios';
-import { Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+import { Image, Transformation, } from 'cloudinary-react';
 import cloudinary from 'cloudinary-core';
 
 
