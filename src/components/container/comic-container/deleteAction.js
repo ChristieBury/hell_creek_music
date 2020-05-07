@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function DeleteAction(props) {
     function handleClick(){
-        fetch(`http://127.0.0.1:5000/delete/${props.id}`,{
+        fetch(`https://hell-creek-music-website.herokuapp.com/delete/${props.id}`,{
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"

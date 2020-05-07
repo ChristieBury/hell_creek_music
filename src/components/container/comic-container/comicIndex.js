@@ -13,7 +13,7 @@ export default class ComicIndex extends Component {
     }
   
     componentDidMount() {
-      fetch('http://127.0.0.1:5000/comic-books', {
+      fetch('https://hell-creek-music-website.herokuapp.com/comic-books', {
         method: 'GET',
         headers: {
           'accepts': 'application/json',
