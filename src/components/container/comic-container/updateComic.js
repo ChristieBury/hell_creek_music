@@ -31,7 +31,7 @@ export default class UpdateBook extends Component {
         let author = this.state.author;
         // let image = this.state.image;
 
-        fetch(`https://hell-creek-music-website.herokuapp.com/update_comic/${id}`, {
+        fetch(`https://hell-creek-music-website.herokuapp.com/container/comic-container/and-more/update_comic/${id}`, {
             method:'PUT',
             headers:{
                 "Content-Type":"application/json"

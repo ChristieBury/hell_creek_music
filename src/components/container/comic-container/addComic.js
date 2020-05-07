@@ -25,7 +25,7 @@ export default class AddComic extends Component {
         let author = this.state.author
        
 
-        fetch("https://hell-creek-music-website.herokuapp.com/comic-books/input",{
+        fetch("https://hell-creek-music-website.herokuapp.com/container/comic-container/and-more/comic-books/input",{
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"

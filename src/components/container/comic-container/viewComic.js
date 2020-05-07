@@ -17,7 +17,7 @@ export default class ViewBook extends Component {
         console.log(id)
        
 
-        fetch(`https://hell-creek-music-website.herokuapp.com/comic-book/${id}`, {
+        fetch(`https://hell-creek-music-website.herokuapp.com/container/comic-container/and-more/comic-book/${id}`, {
         method: 'GET',
         headers:{
             'accepts': "application/json",
